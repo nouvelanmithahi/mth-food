@@ -92,7 +92,6 @@
             color: var(--or-design);
         }
 
-        /* --- NOUVEAU STYLE POUR LA LISTE --- */
         .liste-recette {
             background: #fff;
             border-radius: 15px;
@@ -155,212 +154,158 @@
 </head>
 
 <body>
-
     <nav class="navbar navbar-dark bg-dark py-3">
-        <div class="container justify-content-center">
-            <a class="navbar-brand" href="#">Mth-food</a>
-        </div>
+        <div class="container justify-content-center"><a class="navbar-brand" href="#">Mth-food</a></div>
     </nav>
-
     <div class="hero">
         <div class="hero-content container">
             <h1>L'Art de Bien Manger</h1>
-            <p>Une symphonie de saveurs préparée avec passion pour les palais les plus exigeants.</p>
-            <a href="#menu" class="btn btn-whatsapp btn-lg">Consulter le Menu</a>
+            <p>Une symphonie de saveurs préparée avec passion pour les palais les plus exigeants.</p><a href="#menu"
+                class="btn btn-whatsapp btn-lg">Consulter le Menu</a>
         </div>
     </div>
-
     <section class="py-5 text-center bg-white">
         <div class="container">
             <h2 class="display-5 mb-4" style="font-family: 'Playfair Display';">Pourquoi choisir Mth-food ?</h2>
-            <p class="lead mx-auto" style="max-width: 800px;">
-                Oubliez le quotidien et laissez-vous transporter par une cuisine authentique.
-                Chaque ingrédient est choisi pour sa fraîcheur, chaque plat est une création unique.
-                <b>Commandez maintenant et recevez le bonheur à votre table.</b>
-            </p>
+            <p class="lead mx-auto" style="max-width: 800px;">Oubliez le quotidien et laissez-vous transporter par une
+                cuisine authentique. Chaque ingrédient est choisi pour sa fraîcheur, chaque plat est une création
+                unique. <b>Commandez maintenant et recevez le bonheur à votre table.</b></p>
         </div>
     </section>
-
-    <!-- Section Menu - Tes 3 plats principaux -->
     <section id="menu" class="container py-5">
         <h2 class="text-center mb-5" style="font-family:'Playfair Display';">Nos Spécialités</h2>
         <div class="row g-5">
             <div class="col-lg-4">
                 <div class="card card-menu">
-                    <img src="https://res.cloudinary.com/dsrrcazk/image/upload/v1794322678/download_2_nyama.jpg"
-                        class="card-img-top" alt="Viande Braisée">
+                    <a href="https://res.cloudinary.com/dsrrcazk/image/upload/v1794322678/download_2_nyama.jpg"
+                        target="_blank"><img
+                            src="https://res.cloudinary.com/dsrrcazk/image/upload/v1794322678/download_2_nyama.jpg"
+                            class="card-img-top" alt="Viande Braisée"></a>
                     <div class="card-body text-center">
                         <h4 class="fw-bold">Le Braisé Royal</h4>
-                        <p class="text-muted">Une viande d'exception, fondante et fumée au bois précieux.</p>
-                        <button class="btn btn-whatsapp" onclick="envoyerCommande('Le Braisé Royal')">Commander</button>
+                        <p class="text-muted">Une viande d'exception, fondante et fumée au bois précieux.</p><button
+                            class="btn btn-whatsapp" onclick="envoyerCommande('Le Braisé Royal')">Commander</button>
                     </div>
                 </div>
             </div>
             <div class="col-lg-4">
                 <div class="card card-menu">
-                    <img src="https://res.cloudinary.com/dsrrcazk/image/upload/v1794322582/download_2_spagetti.jpg"
-                        class="card-img-top" alt="Spaghettis">
+                    <a href="https://res.cloudinary.com/dsrrcazk/image/upload/v1794322582/download_2_spagetti.jpg"
+                        target="_blank"><img
+                            src="https://res.cloudinary.com/dsrrcazk/image/upload/v1794322582/download_2_spagetti.jpg"
+                            class="card-img-top" alt="Spaghettis"></a>
                     <div class="card-body text-center">
                         <h4 class="fw-bold">Spaghettis Impériaux</h4>
-                        <p class="text-muted">La finesse des pâtes alliée à une sauce secrète onctueuse.</p>
-                        <button class="btn btn-whatsapp"
+                        <p class="text-muted">La finesse des pâtes alliée à une sauce secrète onctueuse.</p><button
+                            class="btn btn-whatsapp"
                             onclick="envoyerCommande('Spaghettis Impériaux')">Commander</button>
                     </div>
                 </div>
             </div>
             <div class="col-lg-4">
                 <div class="card card-menu">
-                    <img src="https://res.cloudinary.com/dsrrcazk/image/upload/v1794322558/download_2_omellett.jpg"
-                        class="card-img-top" alt="Omelette">
+                    <a href="https://res.cloudinary.com/dsrrcazk/image/upload/v1794322558/download_2_omellett.jpg"
+                        target="_blank"><img
+                            src="https://res.cloudinary.com/dsrrcazk/image/upload/v1794322558/download_2_omellett.jpg"
+                            class="card-img-top" alt="Omelette"></a>
                     <div class="card-body text-center">
                         <h4 class="fw-bold">L'Omelette Prestige</h4>
-                        <p class="text-muted">Légère, aérée et garnie des meilleurs produits de la ferme.</p>
-                        <button class="btn btn-whatsapp"
-                            onclick="envoyerCommande('Omelette Prestige')">Commander</button>
+                        <p class="text-muted">Légère, aérée et garnie des meilleurs produits de la ferme.</p><button
+                            class="btn btn-whatsapp" onclick="envoyerCommande('Omelette Prestige')">Commander</button>
                     </div>
                 </div>
             </div>
         </div>
-
-        <!-- NOUVEAU BOUTON POUR AUTRES COMMANDES -->
         <div class="text-center mt-5">
-            <p class="text-muted">Tu ne trouves pas ce que tu veux ?</p>
-            <button class="btn btn-whatsapp btn-lg" onclick="commandeAutre()">✨ Commander Autre Chose</button>
+            <p class="text-muted">Tu ne trouves pas ce que tu veux ?</p><button class="btn btn-whatsapp btn-lg"
+                onclick="commandeAutre()">✨ Commander Autre Chose</button>
         </div>
     </section>
-
-    <!-- NOUVELLE SECTION : LISTE DES AUTRES RECETTES AVEC PETITES IMAGES -->
     <section class="container pb-5">
         <div class="bg-white p-4 rounded-4 shadow-sm">
             <h2 class="text-center mb-1" style="font-family:'Playfair Display';">Nos Autres Délices</h2>
             <p class="text-center text-muted mb-4">Découvrez aussi nos autres recettes du jour</p>
-
             <div class="row">
                 <div class="col-md-6">
-                    <!-- Recette 1 -->
-                    <div class="liste-recette">
-                        <img src="https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=200&q=80"
+                    <div class="liste-recette"><img
+                            src="https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=200&q=80"
                             alt="Poulet Mayo">
                         <div class="flex-grow-1">
                             <h5>Poulet Mayo</h5>
                             <p>Poulet grillé, sauce mayo, frites</p>
-                        </div>
-                        <span class="prix">15.000 FC</span>
-                        <button class="btn-petit"
+                        </div><span class="prix">15.000 FC</span><button class="btn-petit"
                             onclick="envoyerCommande('Poulet Mayo - 15.000 FC')">Commander</button>
                     </div>
-                    <!-- Recette 2 -->
-                    <div class="liste-recette">
-                        <img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?w=200&q=80"
+                    <div class="liste-recette"><img
+                            src="https://images.unsplash.com/photo-1512058564366-18510be2db19?w=200&q=80"
                             alt="Riz Pilaf">
                         <div class="flex-grow-1">
                             <h5>Riz Pilaf + Viande</h5>
                             <p>Riz parfumé, viande tendre</p>
-                        </div>
-                        <span class="prix">12.000 FC</span>
-                        <button class="btn-petit"
+                        </div><span class="prix">12.000 FC</span><button class="btn-petit"
                             onclick="envoyerCommande('Riz Pilaf + Viande - 12.000 FC')">Commander</button>
                     </div>
-                    <!-- Recette 3 -->
-                    <div class="liste-recette">
-                        <img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=200&q=80" alt="Frites">
+                    <div class="liste-recette"><img
+                            src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=200&q=80" alt="Frites">
                         <div class="flex-grow-1">
                             <h5>Frites + Omelette</h5>
                             <p>Frites croustillantes maison</p>
-                        </div>
-                        <span class="prix">8.000 FC</span>
-                        <button class="btn-petit"
+                        </div><span class="prix">8.000 FC</span><button class="btn-petit"
                             onclick="envoyerCommande('Frites + Omelette - 8.000 FC')">Commander</button>
                     </div>
-                    <!-- Recette 4 -->
-                    <div class="liste-recette">
-                        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=200&q=80"
-                            alt="Brochettes">
+                    <div class="liste-recette"><img
+                            src="https://images.unsplash.com/photo-1544025162-d76694265947?w=200&q=80" alt="Brochettes">
                         <div class="flex-grow-1">
                             <h5>Brochettes de Boeuf</h5>
                             <p>4 brochettes grillées au feu</p>
-                        </div>
-                        <span class="prix">10.000 FC</span>
-                        <button class="btn-petit"
+                        </div><span class="prix">10.000 FC</span><button class="btn-petit"
                             onclick="envoyerCommande('Brochettes de Boeuf - 10.000 FC')">Commander</button>
                     </div>
                 </div>
-
                 <div class="col-md-6">
-                    <!-- Recette 5 -->
-                    <div class="liste-recette">
-                        <img src="https://images.unsplash.com/photo-1580476262798-bddd9f4b7369?w=200&q=80"
-                            alt="Poisson">
+                    <div class="liste-recette"><img
+                            src="https://images.unsplash.com/photo-1580476262798-bddd9f4b7369?w=200&q=80" alt="Poisson">
                         <div class="flex-grow-1">
                             <h5>Poisson Grillé</h5>
                             <p>Capitaine grillé, banane plantain</p>
-                        </div>
-                        <span class="prix">18.000 FC</span>
-                        <button class="btn-petit"
+                        </div><span class="prix">18.000 FC</span><button class="btn-petit"
                             onclick="envoyerCommande('Poisson Grillé - 18.000 FC')">Commander</button>
                     </div>
-                    <!-- Recette 6 -->
-                    <div class="liste-recette">
-                        <img src="https://images.unsplash.com/photo-1547592180-85f173990554?w=200&q=80" alt="Haricots">
+                    <div class="liste-recette"><img
+                            src="https://images.unsplash.com/photo-1547592180-85f173990554?w=200&q=80" alt="Haricots">
                         <div class="flex-grow-1">
                             <h5>Haricots + Riz</h5>
                             <p>Plat traditionnel complet</p>
-                        </div>
-                        <span class="prix">9.000 FC</span>
-                        <button class="btn-petit"
+                        </div><span class="prix">9.000 FC</span><button class="btn-petit"
                             onclick="envoyerCommande('Haricots + Riz - 9.000 FC')">Commander</button>
                     </div>
-                    <!-- Recette 7 -->
-                    <div class="liste-recette">
-                        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=200&q=80" alt="Pizza">
+                    <div class="liste-recette"><img
+                            src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=200&q=80" alt="Pizza">
                         <div class="flex-grow-1">
                             <h5>Pizza Mth</h5>
                             <p>Fromage, poulet, légumes frais</p>
-                        </div>
-                        <span class="prix">20.000 FC</span>
-                        <button class="btn-petit" onclick="envoyerCommande('Pizza Mth - 20.000 FC')">Commander</button>
+                        </div><span class="prix">20.000 FC</span><button class="btn-petit"
+                            onclick="envoyerCommande('Pizza Mth - 20.000 FC')">Commander</button>
                     </div>
-                    <!-- Recette 8 -->
-                    <div class="liste-recette">
-                        <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?w=200&q=80" alt="Jus">
+                    <div class="liste-recette"><img
+                            src="https://images.unsplash.com/photo-1551024506-0bccd828d307?w=200&q=80" alt="Jus">
                         <div class="flex-grow-1">
                             <h5>Jus Naturel + Dessert</h5>
                             <p>Jus d'avocat / mangue du jour</p>
-                        </div>
-                        <span class="prix">5.000 FC</span>
-                        <button class="btn-petit" onclick="envoyerCommande('Jus Naturel - 5.000 FC')">Commander</button>
+                        </div><span class="prix">5.000 FC</span><button class="btn-petit"
+                            onclick="envoyerCommande('Jus Naturel - 5.000 FC')">Commander</button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
     <footer class="bg-dark text-white text-center py-5">
         <p class="mb-0">Mth-food &copy; 2026 - L'élégance dans votre assiette.</p>
     </footer>
-
     <script>
-        function envoyerCommande(nomPlat) {
-            const numero = "243998108951";
-            const message = encodeURIComponent("Bonjour Mth-food ! Je souhaite succomber à votre plat : " + nomPlat);
-            window.open(`https://wa.me/${numero}?text=${message}`, "_blank");
-        }
-
-        // NOUVELLE FONCTION POUR AUTRES COMMANDES
-        function commandeAutre() {
-            const numero = "243998108951";
-            let choix = prompt("Que veux-tu commander ? Écris le nom du plat :");
-            if (choix && choix.trim() !== "") {
-                const message = encodeURIComponent("Bonjour Mth-food ! Je veux faire une autre commande : " + choix);
-                window.open(`https://wa.me/${numero}?text=${message}`, "_blank");
-            } else {
-                // Si la personne ne tape rien, on envoie un message général
-                const message = encodeURIComponent("Bonjour Mth-food ! Je veux faire une autre commande, pouvez-vous m'envoyer le menu complet ?");
-                window.open(`https://wa.me/${numero}?text=${message}`, "_blank");
-            }
-        }
+        function envoyerCommande(nomPlat) {const numero = "243998108951"; const message = encodeURIComponent("Bonjour Mth-food ! Je souhaite succomber à votre plat : " + nomPlat); window.open(`https://wa.me/${numero}?text=${message}`, "_blank");}
+        function commandeAutre() {const numero = "243998108951"; let choix = prompt("Que veux-tu commander ? Écris le nom du plat :"); if (choix && choix.trim() !== "") {const message = encodeURIComponent("Bonjour Mth-food ! Je veux faire une autre commande : " + choix); window.open(`https://wa.me/${numero}?text=${message}`, "_blank");} else {const message = encodeURIComponent("Bonjour Mth-food ! Je veux faire une autre commande, pouvez-vous m'envoyer le menu complet ?"); window.open(`https://wa.me/${numero}?text=${message}`, "_blank");} }
     </script>
-
 </body>
 
 </html>
